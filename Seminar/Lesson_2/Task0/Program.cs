@@ -3,7 +3,7 @@
 int ReadInt(string message)
 {
     System.Console.Write(message);
-    int value = Convert.ToInt32(Console.Readline());
+    int value = Convert.ToInt32(Console.ReadLine());
     return value;
 }
 
