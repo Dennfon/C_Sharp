@@ -32,7 +32,7 @@ void Method21(string msg, int count)
 
 int Method3()
 {
-    return DataTime.Now.Year;
+    return DateTime.Now.Year;
 }
 
 int year = Method3();
