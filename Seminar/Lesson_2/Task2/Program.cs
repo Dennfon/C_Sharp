@@ -4,11 +4,11 @@
 
 
 Console.Write("Введите число - ");
-string a = Console.ReadLine();
+string a = Console.ReadLine()!;
 int a1 = Convert.ToInt32(a);
 
 Console.Write("Введите число - ");
-string b = Console.ReadLine();
+string b = Console.ReadLine()!;
 int b1 = Convert.ToInt32(b);
 
 int c = a1 % b1;

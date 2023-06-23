@@ -7,7 +7,7 @@
 int Prompt(string message)
 {
     System.Console.Write($"{message} ");
-    string inputedStr = Console.ReadLine();
+    string inputedStr = Console.ReadLine()!;
     int value;
     if (int.TryParse(inputedStr, out value))
     {
@@ -16,14 +16,6 @@ int Prompt(string message)
     System.Console.WriteLine("Извините, но вы ввели не число");
     Environment.Exit(0);
     return 0;
-}
-
-int[] SetIntroductoryVariables()
-{
-    int len = Prompt("Введите количество элементов массива > ");
-    int min = Prompt("Введите минимальный порог случайных значений > ");
-    int max = Prompt("Введите максимальный порог случайных значений > ");
-    return GenerateArray(len, min, max);
 }
 
 int[] GenerateArray(int len, int min, int max)
@@ -37,6 +29,13 @@ int[] GenerateArray(int len, int min, int max)
     return array;
 }
 
+int[] SetIntroductoryVariables()
+{
+    int len = Prompt("Введите количество элементов массива > ");
+    int min = Prompt("Введите минимальный порог случайных значений > ");
+    int max = Prompt("Введите максимальный порог случайных значений > ");
+    return GenerateArray(len, min, max);
+}
 
 void PrintArrey(int[] array)
 {
@@ -45,8 +44,6 @@ void PrintArrey(int[] array)
         System.Console.Write(array[i] + "\t");
     }
 }
-
-
 
 int[] number = SetIntroductoryVariables();
 PrintArrey(number);

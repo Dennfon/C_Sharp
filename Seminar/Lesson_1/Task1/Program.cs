@@ -6,10 +6,10 @@
 
 
 Console.Write("Введите первое число =>");
-string one = Console.ReadLine();
+string one = Console.ReadLine()!;
 int oneNumber = Convert.ToInt32(one);
 Console.Write("Введите второе число =>");
-string two = Console.ReadLine();
+string two = Console.ReadLine()!;
 int twoNumber = Convert.ToInt32(two);
 
 int squared = twoNumber / oneNumber;

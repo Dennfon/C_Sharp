@@ -4,8 +4,10 @@
 int ReadInt(string message)
 {
     System.Console.WriteLine($"{message}");
-    int value = int.Parse(Console.ReadLine());
+
+    int value = int.Parse(Console.ReadLine()!);
     return value;
+
 }
 
 double Length(int x, int y)

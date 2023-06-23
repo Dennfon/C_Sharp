@@ -1,14 +1,14 @@
 ﻿//Задача 2: Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
 Console.Write("Введите первое целое число => ");
-string one = Console.ReadLine();
+string one = Console.ReadLine()!;
 int number1 = Convert.ToInt32(one);
 
 Console.Write("Введите второе целое число => ");
-string two = Console.ReadLine();
+string two = Console.ReadLine()!;
 int number2 = Convert.ToInt32(two);
 
 Console.Write("Введите третье целое число => ");
-string three = Console.ReadLine();
+string three = Console.ReadLine()!;
 int number3 = Convert.ToInt32(three);
 
 if (number1 > number2 && number1 > number3)

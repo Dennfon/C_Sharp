@@ -1,7 +1,7 @@
 ﻿//Напишите программу, которая будет выдавать название дня недели по заданному номеру.
 
 Console.Write("Напишите номер дня недели =>");
-string numberDay = Console.ReadLine();
+string numberDay = Console.ReadLine()!;
 int number = Convert.ToInt32(numberDay);
 
 if (number == 1)

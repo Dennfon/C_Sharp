@@ -6,7 +6,7 @@
 int Prompt(string message)
 {
     System.Console.Write($"{message} > ");
-    string inputedStr = Console.ReadLine();
+    string inputedStr = Console.ReadLine()!;
     int value;
     if (int.TryParse(inputedStr, out value))
     {

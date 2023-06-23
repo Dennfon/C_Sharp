@@ -1,10 +1,10 @@
 ﻿//Задача 1: Напишите программу, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.
 
 Console.Write("Введите первое целое число => ");
-string one = Console.ReadLine();
+string one = Console.ReadLine()!;
 int number1 = Convert.ToInt32(one);
 Console.Write("Введите второе целое число => ");
-string two = Console.ReadLine();
+string two = Console.ReadLine()!;
 int number2 = Convert.ToInt32(two);
 
 if (number1 < number2)

@@ -4,7 +4,7 @@ void Method1()
     System.Console.WriteLine("Автор ...");
 }
 
-//Method1();
+Method1();
 
 // 2 ВИД
 void Method2(string msg)
@@ -12,7 +12,7 @@ void Method2(string msg)
     System.Console.WriteLine(msg);
 }
 
-//Method2("Hello");
+Method2("Hello");
 
 void Method21(string msg, int count)
 {
@@ -25,7 +25,7 @@ void Method21(string msg, int count)
 
 }
 // именованный вызов переменных
-//Method21(msg: "Hello", count: 4);
+Method21(msg: "Hello", count: 4);
 //Method21(count: 4, msg: "World");
 
 // 3 ВИД

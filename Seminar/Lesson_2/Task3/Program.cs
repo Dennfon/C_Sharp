@@ -4,7 +4,7 @@
 //161 -> да
 
 Console.Write("Введите число - ");
-string a = Console.ReadLine();
+string a = Console.ReadLine()!;
 int a1 = Convert.ToInt32(a);
 
 if (a1 % 7 == 0 && a1 % 23 == 0)
