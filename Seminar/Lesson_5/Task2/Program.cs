@@ -5,7 +5,7 @@
 int numberint()                                 // Запрашивает число у пользователя и переводит его в int
 {
     Console.Write("Введите число --> ");
-    string numint = Console.ReadLine();
+    string numint = Console.ReadLine()!;
     int numberint = Convert.ToInt32(numint);
     return numberint;
 }
